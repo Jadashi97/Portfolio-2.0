@@ -26,7 +26,7 @@ export default function About({ }: Props) {
                 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
-                src='/image2.jpeg'
+                src='/chicagoPic.jpeg'
                 alt='aboutme'
                 className='-mb-20 md:mb-0 flex-shrink-0 w-56 h-56 rounded-full object-cover
                 md:rounded-lg md:w-64 md:h-95 xl:w-[500px] xl:h-[600px]'
@@ -34,7 +34,7 @@ export default function About({ }: Props) {
 
             <div className='space-y-10 px-0 md:px-10'>
                 <h4 className='text-4xl font-semibold'>
-                    Lets break the <span className='underline decoration-[#F7AB0A]/50'>Ice</span>
+                    Lets break the <span className='underline decoration-[#F7AB0A]/50'>ICE</span>
                 </h4>
                 <p className='textbase'>
                     I go by Daniel. You might also know me as Lokose! I have been coding for over 3 years now.
