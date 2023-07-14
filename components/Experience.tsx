@@ -1,6 +1,7 @@
 "use client"; // This is a client component 👈🏽
 import React from 'react';
 import { motion } from 'framer-motion';
+import ExperienceCards from './ExperienceCards';
 
 type Props = {}
 
@@ -15,8 +16,10 @@ const Experience = (props: Props) => {
             <h3 className='absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl'>
                 Experience
             </h3>
-            <div>
-
+            <div className='w-full flex space-x-5 overflow-x-scroll p-18 snap-x snap-mandatory'>
+                <ExperienceCards />
+                <ExperienceCards />
+                <ExperienceCards />
             </div>
         </motion.div>
     )
