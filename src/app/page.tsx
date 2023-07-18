@@ -7,6 +7,7 @@ import About from '../../components/About';
 import Experience from '../../components/Experience';
 import Skills from '../../components/Skills';
 import Projects from '../../components/Projects';
+import ContactMe from '../../components/ContactMe';
 
 export default function Home() {
   return (
@@ -24,11 +25,14 @@ export default function Home() {
       <section id="experience" className="snap-center">
         <Experience />
       </section>
-      <section id='skills' className='snap-start'>
+      <section id='skills' className='snap-center'>
         <Skills />
       </section>
-      <section id='projects' className='snap-center'>
+      <section id='projects' className='snap-start'>
         <Projects />
+      </section>
+      <section id='contactme' className='snap-start'>
+        <ContactMe />
       </section>
     </div>
   )
