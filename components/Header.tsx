@@ -40,7 +40,7 @@ export default function Header({ }: Props) {
           bgColor='transparent'
         />
       </motion.div>
-      <Link href="#contact">
+      <Link href='#contactme'>
         <motion.div
           initial={{
             x: 500,
