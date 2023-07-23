@@ -1,18 +1,11 @@
 
 import pageInfo from './schemas/pageInfo';
-import skill from './schemas/skill';
-import experience from './schemas/experience';
+import experience from "./schemas/experience";
+import project from "./schemas/project";
+import skill from "./schemas/skill";
 import social from "./schemas/social";
-import projects from "./schemas/projects"
-
-
 
 export const schema = {
-  types: schemaTypes.concat([
-    pageInfo,
-    skill,
-    experience,
-    social,
-    projects
-  ]),
+  name: "default",
+  types: [pageInfo, experience, project, skill, social],
 }

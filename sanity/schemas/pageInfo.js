@@ -1,60 +1,61 @@
 /* eslint-disable import/no-anonymous-default-export */
+// schemas/pet.js
 export default {
-  name: 'post',
-  title: 'Post',
-  type: 'document',
+  name: "pageInfo",
+  title: "PageInfo",
+  type: "document",
   fields: [
-   {
-    name: "name",
-    title: "title",
-    type: "string",
-   },
-   {
-    name: "role",
-    title: "Role",
-    type: "string",
-   },
-   {
-    name: "heroImage",
-    title: "Image",
-    type: "image",
-    options: {
-      hotspot: true,
+    {
+      name: "name",
+      title: "Name",
+      type: "string",
     },
-   },
-   {
-    name: "backgroundInformation ",
-    title: "BackgroundInformation",
-    type: "string",
-   },
-   {
-    name: "profilePic",
-    title: "ProfilePic",
-    type: "image",
-    options: {
-      hotspot: true
-    }
-   },
-   {
-    name: 'phoneNumber',
-    title: 'phoneNumber',
-    type: 'string',
-   },
-   {
-    name: 'email',
-    title: 'email',
-    type: 'string',
-   },
-   {
-    name: 'address',
-    title: 'Address',
-    type: 'string',
-   },
-   {
-    name: 'socials',
-    title: 'Socials',
-    type: 'array',
-    of: [{type: "referrence", to: {type: "social"}}]
-   },
+    {
+      name: "role",
+      title: "Role",
+      type: "string",
+    },
+    {
+      name: "heroImage",
+      title: "Image",
+      type: "image",
+      options: {
+        hotspot: true,
+      },
+    },
+    {
+      name: "backgroundInformation",
+      title: "BackgroundInformation",
+      type: "string",
+    },
+    {
+      name: "profilePic",
+      title: "ProfilePic",
+      type: "image",
+      options: {
+        hotspot: true,
+      },
+    },
+    {
+      name: "phoneNumber",
+      title: "PhoneNumber",
+      type: "string",
+    },
+    {
+      name: "email",
+      title: "Email",
+      type: "string",
+    },
+    {
+      name: "address",
+      title: "Address",
+      type: "string",
+    },
+    {
+      name: "socials",
+      title: "Socials",
+      type: "array",
+      of: [{ type: "reference", to: { type: "social" } }],
+    },
   ],
-}
+};
