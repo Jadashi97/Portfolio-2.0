@@ -1,7 +1,9 @@
 /* eslint-disable react/no-unescaped-entities */
 import React from 'react';
 import { PhoneIcon, EnvelopeIcon, MapPinIcon } from '@heroicons/react/24/solid';
-import { useForm, SubmitHandler } from "react-hook-form"
+import { useForm, SubmitHandler } from "react-hook-form";
+import { PageInfo } from "../typings";
+import { motion } from "framer-motion";
 
 type Inputs = {
     name: string,
@@ -10,18 +12,29 @@ type Inputs = {
     message: string
 }
 
-type Props = {}
+type Props = {
+    pageInfo: PageInfo;
+};
 
-export default function ContactMe({ }: Props) {
-    const { register, handleSubmit } = useForm<Inputs>();
+export default function ContactMe({ pageInfo }: Props) {
+    const {
+        register,
+        handleSubmit,
+        formState: { errors }
+    } = useForm<Inputs>();
 
     const onSubmit: SubmitHandler<Inputs> = (formData) => {
         window.location.href = `mailto:lojuan247@gmail.com?subject=${formData.subject}&
         body=Hi, My name is ${formData.name}. ${formData.message} (${formData.email})`;
     }
     return (
-        <div className='h-screen flex relative flex-col text-center md:text-left md:flex-row max-w-7xl 
-        px-18 justify-evenly mx-auto items-center'>
+        <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 1.5 }}
+            className='h-screen flex relative flex-col text-center md:text-left md:flex-row max-w-7xl 
+            px-18 justify-evenly mx-auto items-center'
+        >
             <h3 className='absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl'>
                 Contact Me
             </h3>
@@ -34,15 +47,20 @@ export default function ContactMe({ }: Props) {
                 <div className='space-y-8'>
                     <div className='flex items-center space-x-5 justify-center'>
                         <PhoneIcon className='text-[#F7AB0A] h-7 w-7 animate-pulse' />
-                        <p className='text-2xl'>+6124030012</p>
+                        <p className="text-2xl">{pageInfo.phoneNumber}</p>
+                        {/* <p className='text-2xl'>+6124030012</p> */}
                     </div>
                     <div className='flex items-center space-x-5 justify-center'>
                         <EnvelopeIcon className='text-[#F7AB0A] h-7 w-7 animate-pulse' />
-                        <p className='text-2xl'>lojuan247@gmail.com</p>
+                        {/* <p className='text-2xl'>lojuan247@gmail.com</p> */}
+                        <a className="text-2xl" href={`mailto:${pageInfo.email}`}>
+                            {pageInfo.email}
+                        </a>
                     </div>
                     <div className='flex items-center space-x-5 justify-center'>
                         <MapPinIcon className='text-[#F7AB0A] h-7 w-7 animate-pulse' />
-                        <p className='text-2xl'>Minneapolis, Minnesota</p>
+                        {/* <p className='text-2xl'>Minneapolis, Minnesota</p> */}
+                        <p className="text-2xl">{pageInfo.address}</p>
                     </div>
                 </div>
                 <form
@@ -81,6 +99,6 @@ export default function ContactMe({ }: Props) {
                     </button>
                 </form>
             </div>
-        </div>
+        </motion.div>
     )
 }
