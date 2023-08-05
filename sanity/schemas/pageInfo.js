@@ -1,5 +1,3 @@
-/* eslint-disable import/no-anonymous-default-export */
-// schemas/pet.js
 export default {
   name: "pageInfo",
   title: "PageInfo",

@@ -4,8 +4,7 @@ interface SanityBody {
     _rev: string;
     _updatedAt: string;
 }
-
-interface Image {
+  interface Image {
     _type: "image";
     asset: {
       _ref: string;
@@ -59,7 +58,7 @@ export interface Project extends SanityBody {
     summary: string;
     technologies: Technology[];
 }
-
+ 
 export interface Social extends SanityBody {
     _type: "social";
     title: string;

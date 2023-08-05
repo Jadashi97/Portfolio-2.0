@@ -1,7 +1,4 @@
 /* eslint-disable @next/next/no-img-element */
-"use client"; // This is a client component 👈🏽
-/* eslint-disable @next/next/no-img-element */
-/* eslint-disable react/no-unescaped-entities */
 import { GetStaticProps } from "next";
 import About from "../components/About";
 import ContactMe from "../components/ContactMe";
@@ -66,7 +63,7 @@ const Home = ({ projects, skills, pageInfo, experiences, socials }: Props) => {
                     <div className="flex items-center justify-center">
                         <img
                             className="h-10 w-10 rounded-full filter grayscale hover:grayscale-0 cursor-pointer"
-                            src="../chicagoPic.jpeg"
+                            src="https://i.imgur.com/e2yvD6A.png"
                             alt=""
                         />
                     </div>
