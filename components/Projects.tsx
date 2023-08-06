@@ -1,3 +1,5 @@
+/* eslint-disable jsx-a11y/alt-text */
+/* eslint-disable @next/next/no-img-element */
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { Project } from "../typings";
@@ -38,18 +40,26 @@ function Projects({ projects }: Props) {
                                 className="md:mb-0 flex-shrink-0 w-56 h-56 rounded-full md:rounded-lg md:w-64 md:h-96 xl:w-[500px] xl:h-[300px] object-contain cursor-pointer"
                             />
                         </Link>
-
                         <div className="space-y-10 px-0 md:px-10 max-w-6xl">
                             <h4 className="text-4xl font-semibold text-center">
                                 <span className="decoration-[#F7AB0A]/50 underline">
-                                    Case Study {i + 1} of {projects.length}:
+                                    Personal project {i + 1} of {projects.length}:
                                 </span>{" "}
                                 {project.title}
                             </h4>
-
                             <p className="text-lg text-center md:text-left">
                                 {project.summary}
                             </p>
+                        </div>
+                        <div className="flex space-x-2 my-2 items-center">
+
+                            {project.technologies.map((technology) => (
+                                <img
+                                    key={technology._id}
+                                    className="h-10 w-10 rounded-full items-center"
+                                    src={urlFor(technology.image).url()}
+                                />
+                            ))}
                         </div>
                     </motion.div>
                 ))}
