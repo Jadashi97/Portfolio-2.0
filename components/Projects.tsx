@@ -18,12 +18,12 @@ function Projects({ projects }: Props) {
             transition={{ duration: 1.5 }}
             className="flex relative overflow-hidden flex-col text-left md:flex-row max-w-full h-screen justify-evenly mx-auto items-center z-0"
         >
-            <h3 className="absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl">
+            <h3 className="absolute top-20 uppercase tracking-[20px] text-gray-500 text-2xl">
                 Projects
             </h3>
 
             <div className="relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20 scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]/80">
-                {projects.map((project, i) => (
+                {projects?.map((project, i) => (
                     <motion.div
                         key={project._id}
                         className="w-screen flex flex-col space-y-5 items-center justify-center flex-shrink-0 snap-center p-20 md:p-44 h-screen"
