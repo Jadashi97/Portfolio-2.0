@@ -1,5 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 /* eslint-disable jsx-a11y/alt-text */
+"use client";
 import React from "react";
 import { motion } from "framer-motion";
 import { Experience } from "../typings";
