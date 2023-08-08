@@ -1,5 +1,5 @@
 {
-  "name": "portfolio-2.0",
+  "name": "portfolio-sanity-build",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -12,13 +12,12 @@
     "@heroicons/react": "^2.0.11",
     "@portabletext/react": "^1.0.6",
     "@ramonak/react-progress-bar": "^5.0.2",
-    "@sanity/client": "^6.4.0",
-    "@sanity/image-url": "^1.0.2",
+    "@sanity/image-url": "^1.0.1",
     "add": "^2.0.6",
     "framer-motion": "^7.3.2",
     "framer-motion-carousel": "^2.0.1",
     "next": "12.3.0",
-    "next-sanity": "^0.8.5",
+    "next-sanity": "^0.8.4",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-hook-form": "^7.35.0",
