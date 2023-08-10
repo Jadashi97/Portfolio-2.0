@@ -1,6 +1,3 @@
-/* eslint-disable @next/next/no-img-element */
-/* eslint-disable jsx-a11y/alt-text */
-"use client";
 import React from "react";
 import { motion } from "framer-motion";
 import { Experience } from "../typings";
@@ -30,6 +27,7 @@ function ExperienceCard({ experience }: Props) {
                 <p className="font-bold text-1.8xl mt-1">{experience.company}</p>
                 <div className="flex space-x-2 my-4 items-center">
                     {experience.technologies.map((technology) => (
+                        // eslint-disable-next-line @next/next/no-img-element, jsx-a11y/alt-text
                         <img
                             key={technology._id}
                             className="h-10 w-10 rounded-full items-center"

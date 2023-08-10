@@ -1,5 +1,4 @@
 /* eslint-disable @next/next/no-img-element */
-"use client";
 import { GetStaticProps } from "next";
 import About from "../components/About";
 import ContactMe from "../components/ContactMe";

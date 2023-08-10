@@ -1,6 +1,3 @@
-/* eslint-disable jsx-a11y/alt-text */
-/* eslint-disable @next/next/no-img-element */
-"use client";
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { Project } from "../typings";
@@ -55,6 +52,7 @@ function Projects({ projects }: Props) {
                         <div className="flex space-x-2 my-2 items-center">
 
                             {project.technologies.map((technology) => (
+                                // eslint-disable-next-line @next/next/no-img-element, jsx-a11y/alt-text
                                 <img
                                     key={technology._id}
                                     className="h-10 w-10 rounded-full items-center"

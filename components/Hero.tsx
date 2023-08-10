@@ -1,5 +1,4 @@
 /* eslint-disable @next/next/no-img-element */
-"use client";
 import Link from "next/link";
 import React from "react";
 import { Cursor, useTypewriter } from "react-simple-typewriter";
@@ -28,6 +27,8 @@ function Hero({ pageInfo }: Props) {
                 className="relative rounded-full h-32 w-32 mx-auto object-cover"
                 src={urlFor(pageInfo?.heroImage).url()}
                 alt=""
+                height={"100"}
+                width={"90"}
             />
             <div className="z-20 relative">
                 <h2 className="tracking-[15px] text-sm uppercase text-gray-500 pb-2">
