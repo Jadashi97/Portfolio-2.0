@@ -15,13 +15,6 @@ import { fetchProjects } from "../utils/fetchProjects";
 import { fetchSocial } from "../utils/fetchSocials";
 import Link from "next/link";
 
-type Props = {
-    pageInfo: PageInfo;
-    experiences: Experience[];
-    skills: Skill[];
-    projects: Project[];
-    socials: Social[];
-};
 
 const Home = ({ projects, skills, pageInfo, experiences, socials }: Props) => {
     return (
@@ -72,8 +65,15 @@ const Home = ({ projects, skills, pageInfo, experiences, socials }: Props) => {
         </div>
     );
 };
-
 export default Home;
+
+type Props = {
+    pageInfo: PageInfo;
+    experiences: Experience[];
+    skills: Skill[];
+    projects: Project[];
+    socials: Social[];
+};
 
 export const getStaticProps: GetStaticProps<Props> = async () => {
     const pageInfo: PageInfo = await fetchPageInfo();
@@ -96,7 +96,6 @@ export const getStaticProps: GetStaticProps<Props> = async () => {
         revalidate: 10,
     };
 };
-
 
 
 
