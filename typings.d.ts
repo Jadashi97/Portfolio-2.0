@@ -4,7 +4,8 @@ interface SanityBody {
     _rev: string;
     _updatedAt: string;
 }
-  interface Image {
+
+interface Image {
     _type: "image";
     asset: {
       _ref: string;

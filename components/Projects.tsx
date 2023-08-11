@@ -43,10 +43,10 @@ function Projects({ projects }: Props) {
                                 <span className="decoration-[#F7AB0A]/50 underline">
                                     Personal project {i + 1} of {projects.length}:
                                 </span>{" "}
-                                {project.title}
+                                {project?.title}
                             </h4>
                             <p className="text-lg text-center md:text-left">
-                                {project.summary}
+                                {project?.summary}
                             </p>
                         </div>
                         <div className="flex space-x-2 my-2 items-center">
@@ -56,7 +56,7 @@ function Projects({ projects }: Props) {
                                 <img
                                     key={technology._id}
                                     className="h-10 w-10 rounded-full items-center"
-                                    src={urlFor(technology.image).url()}
+                                    src={urlFor(technology?.image).url()}
                                 />
                             ))}
                         </div>
