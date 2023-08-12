@@ -1,4 +1,3 @@
-/* eslint-disable @next/next/no-img-element */
 import { GetStaticProps } from "next";
 import About from "../components/About";
 import ContactMe from "../components/ContactMe";
@@ -14,6 +13,7 @@ import { fetchSkills } from "../utils/fetchSkills";
 import { fetchProjects } from "../utils/fetchProjects";
 import { fetchSocial } from "../utils/fetchSocials";
 import Link from "next/link";
+import Image from "next/image";
 
 
 const Home = ({ projects, skills, pageInfo, experiences, socials }: Props) => {
@@ -54,7 +54,7 @@ const Home = ({ projects, skills, pageInfo, experiences, socials }: Props) => {
             <Link href="#hero">
                 <footer className="sticky bottom-5 w-full cursor-pointer">
                     <div className="flex items-center justify-center">
-                        <img
+                        <Image
                             className="h-10 w-10 rounded-full filter grayscale hover:grayscale-0 cursor-pointer"
                             src="./myPic.jpeg"
                             alt=""
@@ -96,6 +96,3 @@ export const getStaticProps = async () => {
         revalidate: 10,
     };
 };
-
-
-

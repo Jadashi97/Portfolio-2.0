@@ -1,4 +1,6 @@
-export default {
+import { defineType, defineField } from "sanity";
+
+export default defineType({
   name: "skill",
   title: "Skill",
   type: "document",
@@ -25,4 +27,4 @@ export default {
       },
     },
   ],
-};
+});

@@ -1,4 +1,6 @@
-export default {
+import { defineType, defineField } from "sanity";
+
+export default defineType({
   name: "social",
   title: "Social",
   type: "document",
@@ -15,4 +17,4 @@ export default {
       type: "url",
     },
   ],
-};
+});

@@ -1,4 +1,6 @@
-export default {
+import { defineType, defineField } from "sanity";
+
+export default defineType({
   name: "experience",
   title: "Experience",
   type: "document",
@@ -49,4 +51,4 @@ export default {
       of: [{ type: "string" }],
     },
   ],
-};
+});
