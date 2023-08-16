@@ -1,10 +1,11 @@
-/* eslint-disable @next/next/no-img-element */
+// "use client";
 import Link from "next/link";
 import React from "react";
 import { Cursor, useTypewriter } from "react-simple-typewriter";
 import { urlFor } from "../sanity";
 import { PageInfo } from "../typings";
 import BackgroundCircles from "./BackgroundCircles";
+import Image from "next/image";
 
 type Props = {
     pageInfo: PageInfo;
@@ -23,7 +24,7 @@ function Hero({ pageInfo }: Props) {
     return (
         <div className="h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden">
             <BackgroundCircles />
-            <img
+            <Image
                 className="relative rounded-full h-32 w-32 mx-auto object-cover"
                 src={urlFor(pageInfo?.heroImage).url()}
                 alt=""

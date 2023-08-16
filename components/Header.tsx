@@ -1,4 +1,4 @@
-import React from "react";
+"use client";
 import { SocialIcon } from "react-social-icons";
 import { motion } from "framer-motion";
 import Link from "next/link";
@@ -10,7 +10,7 @@ type Props = {
 
 const Header = ({ socials }: Props) => {
   return (
-    <header className="sticky top-0 flex items-start xl:items-center justify-between p-5 z-20 max-w-7xl mx-auto">
+    <div className="sticky top-0 flex items-start xl:items-center justify-between p-5 z-20 max-w-7xl mx-auto">
       <motion.div
         initial={{
           x: -500,
@@ -35,7 +35,7 @@ const Header = ({ socials }: Props) => {
         ))}
       </motion.div>
 
-      <Link href="#contact">
+      <Link href={'#contact'}>
         <motion.div
           initial={{
             x: 500,
@@ -61,7 +61,7 @@ const Header = ({ socials }: Props) => {
           </p>
         </motion.div>
       </Link>
-    </header>
+    </div >
   );
 };
 
