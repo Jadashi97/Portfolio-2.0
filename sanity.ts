@@ -6,6 +6,8 @@ export const config = {
   projectId: process.env.NEXT_PUBLIC_SANITY_PROJECT_ID!,
   apiVersion: "2023-08-04",
   useCdn: process.env.NODE_ENV === "production",
+  // useCdn: process.env.NODE_ENV === "production",
+
 };
 
 // Set up the client for fetching data in the getProps page functions
