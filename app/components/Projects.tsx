@@ -1,8 +1,7 @@
-// "use client";
-import React from "react";
+'use client';
 import { motion } from "framer-motion";
-import { Project } from "../typings";
-import { urlFor } from "../sanity";
+import { Project } from "../../typings";
+import { urlFor } from "../../sanity";
 import Link from "next/link";
 
 type Props = {

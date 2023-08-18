@@ -1,8 +1,7 @@
-// "use client";
-import React from "react";
+"use client";
 import { motion } from "framer-motion";
 import ExperienceCard from "./ExperienceCards";
-import { Experience } from "../typings";
+import { Experience } from "../../typings";
 
 type Props = {
     experiences: Experience[];

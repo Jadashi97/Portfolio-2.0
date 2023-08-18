@@ -6,13 +6,7 @@ const nextConfig = {
         appDir: true,
     },
     images: {
-        remotePatterns: [
-            {
-                protocol: "https",
-                hostname: "cdn.sanity.io",
-                port: " ",
-            }
-        ],
-      },
+        unoptimized: true,
+      },    
 };
 module.exports = nextConfig;

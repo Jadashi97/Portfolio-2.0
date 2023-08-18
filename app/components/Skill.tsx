@@ -1,8 +1,7 @@
-// "use client";
 import React from "react";
 import { motion } from "framer-motion";
-import { Skill } from "../typings";
-import { urlFor } from "../sanity";
+import { Skill } from "../../typings";
+import { urlFor } from "../../sanity";
 
 type Props = {
     skill: Skill;

@@ -1,9 +1,9 @@
-// "use client";
+"use client";
 import Link from "next/link";
 import React from "react";
 import { Cursor, useTypewriter } from "react-simple-typewriter";
-import { urlFor } from "../sanity";
-import { PageInfo } from "../typings";
+import { urlFor } from "../../sanity";
+import { PageInfo } from "../../typings";
 import BackgroundCircles from "./BackgroundCircles";
 import Image from "next/image";
 
