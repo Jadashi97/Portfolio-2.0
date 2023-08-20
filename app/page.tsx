@@ -1,17 +1,17 @@
 import "styles/globals.css";
-import About from "./components/About";
-import ContactMe from "./components/ContactMe";
-import Header from "./components/Header";
-import Hero from "./components/Hero";
-import Projects from "./components/Projects";
-import Skills from "./components/Skills";
-import WorkExperience from "./components/WorkExperience";
+import About from "../components/About";
+import ContactMe from "../components/ContactMe";
+import Header from "../components/Header";
+import Hero from "../components/Hero";
+import Projects from "../components/Projects";
+import Skills from "../components/Skills";
+import WorkExperience from "../components/WorkExperience";
 import { Experience, PageInfo, Project, Skill, Social } from "../typings";
-import { fetchPageInfo } from "../utils/fetchPageInfo";
+import { fetchPageInfo } from "../utils/fetch-pageInfo";
 import { fetchExperiences } from "../utils/fetch-experience";
-import { fetchSkills } from "../utils/fetchSkills";
-import { fetchProjects } from "../utils/fetchProjects";
-import { fetchSocial } from "../utils/fetchSocials";
+import { fetchSkills } from "../utils/fetch-skills";
+import { fetchProjects } from "../utils/fetch-projects";
+import { fetchSocial } from "../utils/fetch-socials";
 import Link from "next/link";
 import Image from "next/image";
 

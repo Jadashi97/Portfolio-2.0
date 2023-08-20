@@ -2,7 +2,7 @@
 'use client';
 import { motion } from "framer-motion";
 import Skill from "./Skill";
-import { Skill as SkillType } from "../../typings";
+import { Skill as SkillType } from "../typings";
 
 type Props = {
     skills: SkillType[];
