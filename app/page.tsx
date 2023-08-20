@@ -1,4 +1,3 @@
-// "use client";
 import "styles/globals.css";
 import About from "./components/About";
 import ContactMe from "./components/ContactMe";
@@ -9,20 +8,12 @@ import Skills from "./components/Skills";
 import WorkExperience from "./components/WorkExperience";
 import { Experience, PageInfo, Project, Skill, Social } from "../typings";
 import { fetchPageInfo } from "../utils/fetchPageInfo";
-import { fetchExperiences } from "../utils/fetchExperience";
+import { fetchExperiences } from "../utils/fetch-experience";
 import { fetchSkills } from "../utils/fetchSkills";
 import { fetchProjects } from "../utils/fetchProjects";
 import { fetchSocial } from "../utils/fetchSocials";
 import Link from "next/link";
 import Image from "next/image";
-
-type Props = {
-    pageInfo: PageInfo;
-    experiences: Experience[];
-    skills: Skill[];
-    projects: Project[];
-    socials: Social[];
-};
 
 
 

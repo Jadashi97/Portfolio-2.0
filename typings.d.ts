@@ -24,6 +24,11 @@ export interface PageInfo extends SanityBody {
     phoneNumber: string;
     profilePic: Image;
 }
+export interface CustomApiError {
+    status: number;
+    message: string;
+    pageInfo: any;
+}
 
 export interface Experience extends SanityBody {
     _type: "experience";
